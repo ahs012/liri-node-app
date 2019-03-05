@@ -1,30 +1,24 @@
-// REQUIREMENTS //////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////////////////////
-
-//Read and set any environment variables with the dotenv package
 require("dotenv").config();
 
-//Grab all other packages required by liri.js
+//packages required by liri.js
 var fs = require("fs");
 var axios = require("axios");
 var moment = require("moment");
 var Spotify = require("node-spotify-api");
 
-//Enable the Spotify API call /////////////////////////////////////////////////
-//Import the keys.js file and store it in a variable
+//Spotify API call 
 var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
 
-//Capture input from command line and concatenate arguments ///////////////////
+
 var inputArray = process.argv;
 var actionRequest = process.argv[2];
 var inputString = inputArray.splice(3).join("+");
 
-//Divider will be used as a spacer in console log and/or in export txt file
+//Divider 
 var divider = "\n------------------------------------------------------------";
 
-// FUNCTIONS ///////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
+// Functions ///////
 
 // Execute Bands in Town Artist Event request
 function concertThis (arg) {
@@ -146,8 +140,5 @@ function trafficFlow (action,query) {
         break;
     };
 };
-
-// RUN LOGIC //////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////
 
 trafficFlow(actionRequest,inputString);
