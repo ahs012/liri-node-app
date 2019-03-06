@@ -1,17 +1,17 @@
 # **LIRI NODE APP**
 
-## *Real-time online multiplayer Bingo*
+## *Language Interpretation & Recognition Interface App*
 
 * Project source can be downloaded from: https://github.com/ahs012/liri-node-app
-
-* [For Presentation & Demo please click here](https://slides.com/smoss012/deck/live#/) 
+<!-- In Progress ---------
+* [For Presentation & Demo please click here](https://slides.com/smoss012/deck/live#/)  -->
 
 ---
 
 ## Purpose of Liri-Node-App
 
 
-The purpose of **Liri-Node-App** is to assist in searching for artist/song information, as well as concert and movie information by the use of the OMDB and Spotify API.
+The purpose of **Liri-Node-App** is to assist in searching for artist/song information, as well as concert and movie information by the use of the OMDB and Spotify API. LIRI is a Language Interpretation and Recognition Interface that takes in certain parameters and returns desired information.
 
 ---
 
@@ -24,11 +24,10 @@ The purpose of **Liri-Node-App** is to assist in searching for artist/song infor
 
 ## Technologies Used
 
-* [Firebase](https://firebase.google.com) - Real-Time Database 
-* [Dog CEO API](https://dog.ceo/dog-api/) - Card Images
-* [The CAT API](https://thecatapi.com/) - Card Images
-* [Intro.js](https://introjs.com/) - Step-by-step Feature Intro
-* [CBOX](https://www.cbox.ws/) - Live Chat
-* [Google Fonts](https://fonts.google.com/) - Text Styling
+* [Node Spotify API](https://www.npmjs.com/package/node-spotify-api) - Used to pull song information
+* [AXIOS](https://www.npmjs.com/package/axios) - Used to pull information from the OMDB and Bands in Town API
+* [Moment](https://www.npmjs.com/package/moment) 
+* [Dotenv](https://www.npmjs.com/package/dotenv) 
+* [FS](https://www.npmjs.com/package/fs) 
 
 ---

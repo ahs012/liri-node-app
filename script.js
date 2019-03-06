@@ -10,15 +10,15 @@ var Spotify = require("node-spotify-api");
 var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
 
-
+var inputString = inputArray.splice(3).join("+");
 var inputArray = process.argv;
 var actionRequest = process.argv[2];
-var inputString = inputArray.splice(3).join("+");
 
-//Divider 
+
+// Divider 
 var divider = "\n------------------------------------------------------------";
 
-// Functions ///////
+// Functions 
 
 // Execute Bands in Town Artist Event request
 function concertThis (arg) {
@@ -113,11 +113,11 @@ function doWhatItSays () {
     }); 
 };
 
-// Print to log.txt
+// Print to log.txt file
 function printToLog (consolePrint) {
     fs.appendFile('log.txt', consolePrint, (err) => {
         if (err) throw err;
-        console.log('Results of your query can also be found on log.txt' + divider);
+        console.log('Query results can also be found on log.txt' + divider);
       });
 }
 
@@ -128,11 +128,11 @@ function trafficFlow (action,query) {
         concertThis(query);
         break;
     case "spotify-this-song":
-        if (query==="") {query="The Sign Ace of Base"};
+        if (query==="") {query="The Hand that Feeds"};
         spotifyThisSong(query);
         break;
     case "movie-this":
-        if (query==="") {query="Mr.+Nobody"};
+        if (query==="") {query="Waking Life"};
         movieThis(query);
         break;
     case "do-what-it-says":
