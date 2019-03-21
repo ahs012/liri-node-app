@@ -22,6 +22,18 @@ The purpose of **Liri-Node-App** is to assist in searching for artist/song infor
 
 ---
 
+## App in action
+
+# Spotify-this-song
+![alt text](https://github.com/ahs012/liri-node-app/example-gifs/spotify-this-song.gif)
+
+# Concert-this
+![alt text](https://github.com/ahs012/liri-node-app/example-gifs/concert-this.gif)
+
+# Movie-this
+![alt text](https://github.com/ahs012/liri-node-app/example-gifs/movie-this-gif.gif)
+---
+
 ## Technologies Used
 
 * [Node Spotify API](https://www.npmjs.com/package/node-spotify-api) - Used to pull song information

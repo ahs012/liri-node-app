@@ -1,6 +1,6 @@
 require("dotenv").config();
 
-//packages required by liri.js
+//Required Packages 
 var fs = require("fs");
 var axios = require("axios");
 var moment = require("moment");
@@ -10,12 +10,12 @@ var Spotify = require("node-spotify-api");
 var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
 
-var inputString = inputArray.splice(3).join("+");
+
 var inputArray = process.argv;
 var actionRequest = process.argv[2];
+var inputString = inputArray.splice(3).join("+");
 
 
-// Divider 
 var divider = "\n------------------------------------------------------------";
 
 // Functions 
@@ -55,8 +55,6 @@ function spotifyThisSong (arg) {
     .then(function(response) {
 
         var jsonData = response.tracks.items[0];
-
-        // songData ends up being the string containing the show data we will print to the console
         var songData = [
             divider,
             "Artist(s): " + jsonData.album.artists[0].name,
@@ -74,7 +72,7 @@ function spotifyThisSong (arg) {
     });
 };
 
-// Execute Movie-This request
+// Movie-This ///////
 function movieThis (arg) {
     var movieName = arg;
     var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
@@ -103,7 +101,7 @@ function movieThis (arg) {
     );
 };
 
-// Execute Do What It Says request
+// Do What it Says ////////////////
 function doWhatItSays () {
     
     fs.readFile('random.txt', "utf8", function read(err, data) {
