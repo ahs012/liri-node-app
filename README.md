@@ -25,13 +25,13 @@ The purpose of **Liri-Node-App** is to assist in searching for artist/song infor
 ## App in action
 
 # Spotify-this-song
-![alt text](https://github.com/ahs012/liri-node-app/tree/master/Example%20Gifs/spotify-this-song.gif)
+![alt text](/ahs012/liri-node-app/blob/master/Example%20Gifs/spotify-this-song.gif?raw=true)
 
 # Concert-this
-![alt text](https://github.com/ahs012/liri-node-app/tree/master/Example%20Gifs/concert-this.gif)
+![alt text](/ahs012/liri-node-app/blob/master/Example%20Gifs/concert-this.gif?raw=true)
 
 # Movie-this
-![alt text](https://github.com/ahs012/liri-node-app/tree/master/Example%20Gifs/movie-this.gif)
+![alt text](/ahs012/liri-node-app/blob/master/Example%20Gifs/Movie-This-Gif.gif?raw=true)
 ---
 
 ## Technologies Used
