@@ -25,7 +25,7 @@ The purpose of **Liri-Node-App** is to assist in searching for artist/song infor
 ## App in action
 
 # Spotify-this-song
-![Alt Text](https://github.com/ahs012/liri-node-app/Example_Gifs/spotify-this-song.gif)
+![Alt Text](https://github.com/ahs012/liri-node-app/master/Example_Gifs/spotify-this-song.gif)
 
 # Concert-this
 ![alt text](/ahs012/liri-node-app/blob/master/Example%20Gifs/concert-this.gif?raw=true)
