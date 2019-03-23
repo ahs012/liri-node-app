@@ -31,7 +31,7 @@ The purpose of **Liri-Node-App** is to assist in searching for artist/song infor
 ![alt text](./Example_Gifs/concert-this.gif?raw=true)
 
 # Movie-this
-![alt text](./Example_Gifs/movie-this.gif?raw=true)
+![alt text](./Example_Gifs/movie-this-gif.gif?raw=true)
 ---
 
 ## Technologies Used
